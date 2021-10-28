@@ -21,13 +21,13 @@ Head over to https://cschroeter.net/moving-to-strict-typescript/ for more insigh
 With `yarn`:
 
 ```shellsession
-yarn add --dev ts-strictify
+yarn add --dev @ovos-media/ts-strictify
 ```
 
 With `npm`:
 
 ```shellsession
-npm install --save-dev ts-strictify
+npm install --save-dev @ovos-media/ts-strictify
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ You can find a list of all available options [`here`](#options).
 With [`npx`](https://npm.im/npx):
 
 ```shellsession
-npx ts-strictify
+npx @ovos-media/ts-strictify
 ```
 
 With `npm`:

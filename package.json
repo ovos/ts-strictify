@@ -1,6 +1,6 @@
 {
-  "name": "ts-strictify",
-  "version": "1.6.0",
+  "name": "@ovos-media/ts-strictify",
+  "version": "1.6.1",
   "description": "Enable gradual TypeScript strict",
   "keywords": [
     "typescript",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cschroeter/ts-strictify.git"
+    "url": "https://github.com/ovos/ts-strictify.git"
   },
   "scripts": {
     "start": "tsc -w",
