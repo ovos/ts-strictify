@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/ovos/ts-strictify/compare/v1.6.1...v1.6.2) (2021-10-28)
+
+### Features
+
+* noUncheckedIndexedAccess support ([#4](https://github.com/ovos/ts-strictify/pull/4))
+
+
 ## [1.6.1](https://github.com/ovos/ts-strictify/compare/v1.6.0...v1.6.1) (2021-10-28)
 
 ### Bug Fixes
@@ -10,7 +17,7 @@
 * remove yarn.lock - because this is a lib ([#3](https://github.com/ovos/ts-strictify/pull/3))
 
 
-## [1.6.0](https://github.com/cschroeter/ts-strictify/compare/v1.5.3...v1.6.0) (2020-06-05)
+# [1.6.0](https://github.com/cschroeter/ts-strictify/compare/v1.5.3...v1.6.0) (2020-06-05)
 
 
 ### Bug Fixes
