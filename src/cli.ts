@@ -50,30 +50,35 @@ const run = async (): Promise<void> => {
     'targetBranch',
   ])
 
-  const result = await strictify({
-    gitOptions,
-    typeScriptOptions,
-    onFoundChangedFiles: (changedFiles) => {
-      console.log(
-        `🎯  Found ${chalk.bold(String(changedFiles.length))} changed ${
-          changedFiles.length === 1 ? 'file' : 'files'
-        }`,
-      )
-    },
-    onExamineFile: (file) => {
-      console.log(`🔍  Checking ${chalk.bold(file)} ...`)
-    },
-    onCheckFile: (file, hasError) =>
-      hasError
-        ? console.log(`❌  ${chalk.bold(file)} failed`)
-        : console.log(`✅  ${chalk.bold(file)} passed`),
-  })
+  try {
+    const result = await strictify({
+      gitOptions,
+      typeScriptOptions,
+      onFoundChangedFiles: (changedFiles) => {
+        console.log(
+          `🎯  Found ${chalk.bold(String(changedFiles.length))} changed ${
+            changedFiles.length === 1 ? 'file' : 'files'
+          }`,
+        )
+      },
+      onExamineFile: (file) => {
+        console.log(`🔍  Checking ${chalk.bold(file)} ...`)
+      },
+      onCheckFile: (file, hasError) =>
+        hasError
+          ? console.log(`❌  ${chalk.bold(file)} failed`)
+          : console.log(`✅  ${chalk.bold(file)} passed`),
+    })
 
-  if (result.errors) {
-    console.log(`💥  ${result.errors} errors found`)
+    if (result.errors) {
+      console.log(`💥  ${result.errors} errors found`)
+      process.exit(1)
+    } else {
+      console.log(`🎉  ${chalk.green('All files passed')}`)
+    }
+  } catch (error) {
+    console.log('message' in error ? error.message : error)
     process.exit(1)
-  } else {
-    console.log(`🎉  ${chalk.green('All files passed')}`)
   }
 }
 run()
