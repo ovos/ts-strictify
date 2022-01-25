@@ -1,3 +1,11 @@
+## [1.6.4](https://github.com/ovos/ts-strictify/compare/v1.6.3...v1.6.4) (2022-01-25)
+
+Same as v1.6.3, but re-compiled with LF line-endings in `dist`.
+
+### Bug Fixes
+
+- v1.6.3 was a bad release as it was compiled with CRLF line endings. Ensured in `tsconfig.json` that it will always compile with LF line endings from now on.
+
 ## [1.6.3](https://github.com/ovos/ts-strictify/compare/v1.6.2...v1.6.3) (2022-01-18)
 
 ### Bug Fixes
