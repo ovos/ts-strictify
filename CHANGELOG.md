@@ -1,3 +1,9 @@
+## [1.6.5](https://github.com/ovos/ts-strictify/compare/v1.6.4...v1.6.5) (2022-09-27)
+
+### Bug Fixes
+
+- fix: now reporting errors on windows ([#7](https://github.com/ovos/ts-strictify/pull/7), thx @RenaudF!)
+
 ## [1.6.4](https://github.com/ovos/ts-strictify/compare/v1.6.3...v1.6.4) (2022-01-25)
 
 Same as v1.6.3, but re-compiled with LF line-endings in `dist`.
