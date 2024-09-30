@@ -1,3 +1,11 @@
+## [1.6.7](https://github.com/ovos/ts-strictify/compare/v1.6.6...v1.6.7) (2024-09-30)
+
+### Bug Fixes
+
+`noUncheckedIndexedAccess` (introduced in 1.6.2 - [#4](https://github.com/ovos/ts-strictify/pull/4)) should be false by default. ([#8](https://github.com/ovos/ts-strictify/pull/8))
+
+Even `strict: true` in `tsconfig.json` does not enable it - see [Typescript#49169](https://github.com/microsoft/TypeScript/issues/49169)
+
 ## [1.6.6](https://github.com/ovos/ts-strictify/compare/v1.6.5...v1.6.6) (2022-09-29)
 
 v1.6.5 was a bad release, which did not contain the listed changes. This release fixes that.

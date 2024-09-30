@@ -1,6 +1,6 @@
 {
   "name": "@ovos-media/ts-strictify",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "Enable gradual TypeScript strict",
   "keywords": [
     "typescript",
